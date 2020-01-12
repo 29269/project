@@ -1,0 +1,681 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import "http://weloveiconfonts.com/api/?family=entypo";
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrapper{
+  width: 100%;
+}
+
+[class*="entypo-"]:before {
+  font-family: 'Anton', sans-serif;
+}
+
+html, body {
+  background: #fff;
+  color: #777;
+
+}
+/* type animation */
+.typeme{
+
+  color: #ff3399;
+  background: #000000;
+  padding-left: 10px;
+  text-align: center;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 100px 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 3s steps(60, end);
+  margin-left: 700px;
+  margin-top: -200px
+}
+
+p.typeme:nth-child(2){
+  animation: type2 5s steps(60, end);
+}
+p.typeme:nth-child(3){
+  animation: type3 9s steps(60, end);
+}
+
+p.typeme a{
+  color: lime;
+  text-decoration: none;
+}
+
+.typeme span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  40%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes type3{
+  0%{width: 0;}
+  45%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+
+
+ol {
+  margin-bottom: 10px;
+}
+
+h1 {
+  letter-spacing: -0.05em;
+  font-family: "Exo", sans-serif;
+  color: #3f5b80;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding: 0;
+  &:last-child {
+    margin-bottom: 40px;
+  }
+  }
+
+a {
+  color: #ff3399;
+  font-size: 22px;
+  &:hover {
+    color: #000000;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+  }
+  text-decoration: none;
+}
+
+nav {
+  float: right;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background: #000000; */
+  position: fixed;
+z-index: 100;
+}
+
+  nav .padded {
+    padding: 5px;}
+
+ul {
+  float: right;
+  width: 100%;
+  margin: 0 0 30px 0; /*Padding Fix*/
+  padding: 0;}
+
+ul li {
+  float: right;
+  display: inline;
+  margin-right: 0px;
+  &:nth-child(even) a {
+  background: #4a6c8c ;
+  }
+  list-style: none;}
+
+ul li a {
+  display: block;
+  padding: 20px;
+  font-family: "Exo", sans-serif;
+  font-weight: 200;
+  &:hover {
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+  }
+  color: #cc66ff;
+  text-decoration: none;}
+
+ul li.active a {
+  background: #000000 ;}
+
+// scrollTop Styles
+ul li.scrollTop {
+float: right;
+}
+
+ ul li.logo{
+   float: left;
+   display: block;
+		width: 76px;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: white;
+		text-align: center;
+  }
+  .leesveder {
+  background: transparent;
+  border: 1px solid #66E8E4;
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #66E8E4;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+.card{
+  font-size: 20px;
+  width: 700px;
+  margin: 60px auto;
+  /* background-color: #ff33cc; */
+  color: #000000;
+  overflow: hidden // clearfix;
+  box-shadow: 5px 5px 0 0 #aaa;
+  margin-top: -5px;
+  padding: 2em;
+}
+h2{
+  color: #000000;
+  margin: 0;
+   padding: 20px;
+   text-align: center;
+     weight: 400;
+   animation: fadein 1.2s;
+}
+.container {
+  width:98%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: block;
+}
+/* #section1{
+  animation: kleur infinite;
+}
+@keyframes kleur{
+  from{background-color: yellow};
+  to{background-color: red};
+} */
+h3 h2{
+  color:#000000;
+  text-align: center;
+}
+#foto{
+  opacity: 0.4;
+}
+.blur {-webkit-filter: blur(4px);filter: blur(4px);}
+/* foto's voor studenten aan de word */
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; */
+  /*
+  ** Layout, Text & Colors
+
+
+  body {
+    /* background: #150f21; */
+    font-size: 18px;
+  }
+article{
+  margin-top: 4em;
+  font: center;
+}
+h1{
+  color: #000000;
+}
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+  }
+  #developer{
+    margin-left: 40px;
+    padding-left: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Cards */
+  .card-column {
+    width: auto;
+    float: left;
+    padding: 4%;
+    box-sizing: border-box;
+  }
+
+  .column-1 {
+    padding-top: 100px;
+  }
+
+  .card {
+    width: 92%;
+    /* max-width: 340px; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #0000;
+    color: #ff3399;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+
+  .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    left: -6px;
+    top: -6px;
+  }
+
+  .card h1 {
+
+    position: relative;
+    padding: 160px 0px 50px 10px;
+    width: 90%;
+  }
+  .card p {
+    position: relative;
+    padding: 20px 0px 60px 10px;
+    width: 90%;
+  }
+
+  .card > img {
+    width: 65%;
+    position: absolute;
+    top: -6%;
+    left: -7%;
+  }
+
+  .card-color-0 {
+    background-color: #ff3399;
+  }
+  /* The cover (expanding background) */
+  .cover {
+    position: fixed;
+    background: #000000;
+    z-index: 100;
+    transform-origin: 50% 50%;
+  }
+
+  /* The open page content */
+  .open-content {
+    width: 100%;
+    z-index: 110;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .open-content img {
+    position: relative;
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 20px;
+    z-index: 5;
+  }
+
+  .open-content .text {
+    background: #fff;
+    margin-top: -56%;
+    padding: 40% 5% 5% 5%;
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  .open-content .text h1, .open-content .text p {
+    /* max-width: 700px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .open-content .text p, .open-content .text p {
+    /* max-width: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .close-content {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .close-content span {
+    background: #222;
+    width: 30px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 14px;
+  }
+
+  .x-1 {
+    transform: rotate(45deg);
+  }
+
+  .x-2 {
+    transform: rotate(-45deg);
+  }
+
+  /*
+  ** Transitions
+  */
+
+  .card {
+    transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
+  }
+
+  .border {
+    transition: opacity 200ms linear, transform 200ms ease-out;
+  }
+
+  .card img {
+    transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
+  }
+
+  .card h1 {
+    transform: translate3d(60%, 0px, 0px);
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+  }
+  /* .card p {
+    transform: translate3d(20%, 0px, 0px);
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+  } */
+
+  /* Clicked card */
+  .card.clicked img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+  }
+
+  .card.clicked .border {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+
+  .card.out, .card.out img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+  }
+
+  .card.out h1, .card.clicked h1 {
+    transform: translate3d(20%, -40px, 0px);
+    opacity: 0;
+  }
+
+  .cover {
+    transition: transform 300ms ease-in-out;
+  }
+
+  .open-content {
+    transition: opacity 200ms linear 0ms;
+  }
+
+  .open-content.open {
+    opacity: 1;
+    pointer-events: all;
+    transition-delay: 1000ms;
+  }
+
+  /*
+  ** Media Queries
+  */
+
+  @media screen and (max-width: 600px) {
+    .card-column {
+      width: 90%;
+    }
+
+    .column-1 {
+      padding-top: 0px;
+    }
+
+    .open-content img {
+      margin-top: 40px;
+    }
+  }
+table, th, td {
+  font-size: 16;
+  margin-left: 26%;
+  text-align: center;
+  border: 1px  solid black;
+  border-collapse: collapse;
+  color:#ffff;
+  background-color: #000000;
+  margin-bottom: 200px;
+  width: 750px;
+}
+th, td {
+  padding: 30px 30px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+.pink{
+  color: #ff3399;
+}
+.col-container {
+  display: table;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 70px;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+  padding-left: 40px;
+  padding-right: 70px;
+}
+.student{
+  color: #ffff;
+}
+#color1{
+  color: #ff3399;
+  background-color: #0000;
+}
+#color2{
+  color: #0000;
+  background-color: #ff3399;
+}
+iframe{
+  margin-left: 25%;
+  margin-top: 40px;
+}
+#grid{
+  background: #000;
+  color: #ff3399;
+margin: 0;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Contact{
+width: 1000px;
+height: 190px;
+margin-left: 200px;
+}
+
+}
+aside a{
+  text-decoration: none;
+  font-size: 16px;
+}
+#klein{
+  margin-left: -100px;
+  margin-top: -60px;
+}
+
+#meld{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+#meld:hover{
+  color: #ffff;
+
+}
+#meld:active{
+color: #FF98DB;
+}
+#foto1{
+  margin-left: -145px;
+}
+#aanmelden{
+  width: 60%;
+  text-align: center;
+  margin-left: 230px;
+
+}
+a:hover {
+color: #D20E8D;
+}
+a:active{
+color: #FF98DB;
+}
+footer{
+width: 1650px;
+
+  background: #000000;
+  margin-top: 680px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 16px;
+}
+footer h1{
+  color: #fff;
+}
+.col-container1 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding-top: 100px;
+}
+.col1 {
+  display: grid-cell;
+  padding: 16px;
+  padding-left: auto;
+  padding-right: auto;
+}
+#filmpje{
+  margin-top: 20px;
+}
+#margin{
+  margin-top: 300px;
+
+}
+#nama{
+margin-top:-50px;
+margin-bottom: -50px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ff3399;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #D20E8D;
+}
+
+/* Style the container/contact section */
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#social{
+  margin-top: 110px;
+}
+article form{
+  margin-left: 500px;
+  z-index: 100;
+}
+footer p{
+  margin-top: 30px
+}
+/* width */
+::-webkit-scrollbar {
+width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px black;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ff3399;
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #FF98DB;
+}
